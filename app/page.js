@@ -12,12 +12,11 @@ export default function MarvelQuotesPage() {
     { quote: "I can do this all day.", movie: "Captain America: The First Avenger (2011)" },
     { quote: "With great power comes great responsibility.", movie: "Spider-Man (2002)" },
     { quote: "I love you 3000.", movie: "Avengers: Endgame (2019)" },
-    { quote: "I'mwithyouuntiltheendoftheline", movie: "Doctor Strange (2016)" },
     { quote: "Wakanda forever!", movie: "Black Panther (2018)" },
     { quote: "We are Groot.", movie: "Guardians of the Galaxy (2014)" },
     { quote: "I am Inevitable", movie: "Avengers: Endgame (2019)" },
     { quote: "Avengers... assemble!", movie: "Avengers: Endgame (2019)" },
-    { quote: "", movie: "Avengers: Endgame (2019)" },
+    { quote: "I'm with you until the end of the line", movie: "Captain America: The Winter Soldier (2014)" },
   ];
 
   const generateRandomQuote = () => {
@@ -33,7 +32,7 @@ export default function MarvelQuotesPage() {
         <h1 className="text-4xl font-bold mb-8 text-red-500">Marvel Movie Quotes</h1>
 
         <div className="bg-gray-800 p-8 rounded-lg shadow-lg mb-8">
-          <blockquote className="text-2xl italic mb-4">"{currentQuote}"</blockquote>
+          <blockquote className="text-2xl italic mb-4">{`"${currentQuote}"`}</blockquote>
           {currentMovie && <p className="text-gray-400">— {currentMovie}</p>}
         </div>
 
